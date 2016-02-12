@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Confirm Purchase</title>
+</head>
+<body>
+<h1>You Should...</h1>
+	<h:form id="loginForm">
+		
+		<table>
+		<tr>
+			<td align="left"><h:outputLabel value="UserName:  " /></td>
+			<td align="left"><h:inputText value="#{loginBean.username}" /></td>
+		</tr>
+		<tr>
+			<td align="left"><h:outputLabel value="Password:  " /></td>
+			<td align="left"><h:inputSecret value="#{loginBean.password}"></h:inputSecret></td>
+		</tr>
+		</table>
+
+		<br />
+		<h:commandButton value="Login" action="#{loginBean.authenticate}"></h:commandButton>
+		<input type="reset" value="Reset!"></input>
+	</h:form>
+</body>
+</html>
