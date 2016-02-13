@@ -4,53 +4,5 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
     version="2.2">
-	<navigation-rule>
-		<display-name>Login.xhtml</display-name>
-		<from-view-id>/Login.xhtml</from-view-id>
-		<navigation-case>
-			<from-outcome>Error</from-outcome>
-			<to-view-id>/Error.xhtml</to-view-id>
-		</navigation-case>
-	</navigation-rule>
-	<navigation-rule>
-		<display-name>Login.xhtml</display-name>
-		<from-view-id>/Login.xhtml</from-view-id>
-		<navigation-case>
-			<from-outcome>Change</from-outcome>
-			<to-view-id>/Settings.xhtml</to-view-id>
-		</navigation-case>
-	</navigation-rule>
-	<navigation-rule>
-		<display-name>Login.xhtml</display-name>
-		<from-view-id>/Login.xhtml</from-view-id>
-		<navigation-case>
-			<from-outcome>Login</from-outcome>
-			<to-view-id>/Welcome.xhtml</to-view-id>
-		</navigation-case>
-	</navigation-rule>
-	<navigation-rule>
-		<display-name>Welcome.xhtml</display-name>
-		<from-view-id>/Welcome.xhtml</from-view-id>
-		<navigation-case>
-			<from-outcome>ShouldI</from-outcome>
-			<to-view-id>/Confirm.xhtml</to-view-id>
-		</navigation-case>
-	</navigation-rule>
-	<navigation-rule>
-		<display-name>Confirm.xhtml</display-name>
-		<from-view-id>/Confirm.xhtml</from-view-id>
-		<navigation-case>
-			<from-outcome>Decision</from-outcome>
-			<to-view-id>/Login.xhtml</to-view-id>
-		</navigation-case>
-	</navigation-rule>
-	<navigation-rule>
-		<display-name>Settings.xhtml</display-name>
-		<from-view-id>/Settings.xhtml</from-view-id>
-		<navigation-case>
-			<from-outcome>Change_done</from-outcome>
-			<to-view-id>/Login.xhtml</to-view-id>
-		</navigation-case>
-	</navigation-rule>
 
 </faces-config>
